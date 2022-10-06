@@ -1,4 +1,4 @@
-function updatePhoneNumber(isIncreasing){
+function updateProductNumber(isIncreasing){
     const phoneInput = document.getElementById("phone-input");
     let phoneNumber = parseInt(phoneInput.value);
     if(isIncreasing == true){
@@ -28,12 +28,12 @@ function calculateTotal(){
 }
 // phone increase and decrease events 
 document.getElementById("phone-plus").addEventListener("click", function (){
-    updatePhoneNumber(true);
+    updateProductNumber(true);
     calculateTotal()
     
 });
 document.getElementById("phone-minus").addEventListener("click", function(){
-    updatePhoneNumber(false);
+    updateProductNumber(false);
     calculateTotal()
 });
 // case increase and decrease events 
